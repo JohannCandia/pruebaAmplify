@@ -21,7 +21,7 @@ const MonitorOT = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const fetchOtDetalles = async () => {
-    const res = await fetch("http://internal-a032771aed78c4f10b69ab42863f3f1c-972419124.us-east-1.elb.amazonaws.com/historico");
+    const res = await fetch("https://internal-a032771aed78c4f10b69ab42863f3f1c-972419124.us-east-1.elb.amazonaws.com/historico");
     const data = await res.json();
     console.log(data);
     setData(data);
@@ -47,7 +47,7 @@ const MonitorOT = () => {
 
     try {
       const response = await fetch(
-       "http://internal-a032771aed78c4f10b69ab42863f3f1c-972419124.us-east-1.elb.amazonaws.com/updateTerminada",
+       "https://internal-a032771aed78c4f10b69ab42863f3f1c-972419124.us-east-1.elb.amazonaws.com/updateTerminada",
         {
           method: "PUT",
           headers: {
