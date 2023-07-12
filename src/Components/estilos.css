@@ -1,0 +1,23 @@
+.botones-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  .botones-checkbox label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+  
+  }
+  
+  .botones-checkbox input[type="checkbox"]:checked + label {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  html, body {
+    user-select: none;
+  }
+  .seleccionado {
+    background-color: blue;
+  }
